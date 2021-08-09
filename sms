@@ -1,0 +1,63 @@
+#to create database
+CREATE DATABASE sms;
+
+# to use database
+USE sms;
+
+# to create table
+CREATE TABLE  student_info(
+name varchar(50),
+f_name varchar(50),
+m_name varchar(50),
+address varchar(50),
+phone_num int,
+roll_num int,
+aadhar_num bigint);
+
+# to see structure of a table
+desc student_info;
+
+# to drop a database: to delete a database completely
+drop database sms;
+CREATE DATABASE sms;
+USE sms;
+#to create table: create table TABLE_NAME(COLUMN1 DATATYPE, COLUMN2, DATATYPE,.....);                                                                                    
+CREATE TABLE teacher_info(
+name varchar(50),
+address varchar(50),
+phone_num int,
+aadhar_num bigint);
+desc teacher_info;
+
+
+# insert data into table (1) when data to be inserted in all the columns
+INSERT INTO teacher_info
+VALUES("shivani", "gic gate", 865049144, 657854567843); 
+
+#INSERT INTO TABLES WHEN THERE ARE CERTAIN COLUMNS
+
+INSERT INTO teacher_info(name, phone_num, aadhar_num)
+VALUES("gaurav", 678543897, 5346786543456);
+
+INSERT INTO teacher_info
+VALUES("riya","almora",9678903456,123498764567);
+
+INSERT INTO teacher_info(name,phone_num,aadhar_num)
+VALUES("anita",8790456789,345678903212);
+
+ALTER table teacher_info modify column phone_num bigint;
+ SELECT * from teacher_info;
+ 
+ #SELECT COLUMN1, COLUMN2, ..... FROM TABLE_NAME;
+ SELECT NAME ,PHONE_NUM FROM TEACHER_INFO;
+ show tables;
+ 
+ show databases;
+
+
+
+
+
+
+
+
