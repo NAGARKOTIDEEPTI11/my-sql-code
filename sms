@@ -53,9 +53,9 @@ ALTER table teacher_info modify column phone_num bigint;
  show tables;
  
  show databases;
-
-
-
+ desc student_info;
+ #insert multiple values
+SELECT*from student_info;
 
 
 
